@@ -1,6 +1,51 @@
-import { features } from "@/mock/home";
 import AnimatedSection from "../AnimatedSection";
 import FeatureCard from "@/components/home/FeatureCard";
+import {
+  Users,
+  Calendar,
+  Clock,
+  Building2,
+  Shield,
+  BarChart3,
+} from "lucide-react";
+
+const features = [
+  {
+    icon: Users,
+    title: "Employee Management",
+    description:
+      "Centralize employee data, documents, and profiles in one secure platform.",
+  },
+  {
+    icon: Calendar,
+    title: "Leave Management",
+    description:
+      "Streamlined leave requests, approvals, and calendar visibility for teams.",
+  },
+  {
+    icon: Clock,
+    title: "Attendance Tracking",
+    description:
+      "Real-time attendance monitoring with automated reports and insights.",
+  },
+  {
+    icon: Building2,
+    title: "Multi-Tenant Architecture",
+    description:
+      "Isolated data for each organization with custom branding support.",
+  },
+  {
+    icon: Shield,
+    title: "Role-Based Access",
+    description: "Granular permissions for admins, HR managers, and employees.",
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & Reports",
+    description:
+      "Actionable insights with real-time dashboards and exportable reports.",
+  },
+];
 
 const FeatureSection = () => {
   return (

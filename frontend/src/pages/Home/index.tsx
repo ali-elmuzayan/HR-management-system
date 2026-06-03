@@ -7,7 +7,7 @@ import PricingSection from "@/components/home/sections/PricingSection";
 import CTASection from "@/components/home/sections/CTASection";
 import Footer from "@/components/home/Footer";
 
-const Index = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Animation Background */}
@@ -28,4 +28,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;
