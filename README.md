@@ -7,14 +7,14 @@ Human Resource Management System built as a monorepo with a Laravel API backend 
 | Layer    | Stack |
 | -------- | ----- |
 | Backend  | PHP 8.3, Laravel 13, Pest |
-| Frontend | React 19, TypeScript, Vite 8, Tailwind CSS 4, shadcn/ui |
+| Frontend | React 19, TypeScript, NextJS 16, Tailwind CSS 4, shadcn/ui |
 
 ## Project structure
 
 ```
 07_hrms/
 ├── backend/   # Laravel application (API, jobs, database)
-└── frontend/  # React + Vite SPA
+└── client/    # NextJS 
 ```
 
 ## Prerequisites
@@ -49,12 +49,12 @@ composer setup
 ### Frontend
 
 ```bash
-cd frontend
+cd client
 npm install
 npm run dev
 ```
 
-The dev server runs at [http://localhost:5173](http://localhost:5173) by default.
+The dev server runs at [http://localhost:3000](http://localhost:3000) by default.
 
 ## Development
 
@@ -64,8 +64,8 @@ From `backend/`, `composer dev` starts the Laravel server, queue worker, log tai
 | ------- | -------- | ----------- |
 | `composer dev` | `backend/` | Laravel serve, queue, logs, and related tooling |
 | `php artisan serve` | `backend/` | HTTP server only |
-| `npm run dev` | `frontend/` | Vite dev server with HMR |
-| `npm run build` | `frontend/` | Production build |
+| `npm run dev` | `client/` | NextJS dev server with HMR |
+| `npm run build` | `client/` | Production build |
 | `composer test` | `backend/` | Run Pest tests |
 
 ## Environment
@@ -74,4 +74,4 @@ Copy `backend/.env.example` to `backend/.env` and set database credentials and `
 
 ## License
 
-MIT (see individual package licenses in `backend/` and `frontend/`).
+MIT (see individual package licenses in `backend/` and `client/`).
